@@ -1,218 +1,555 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nimay Malik - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <title>NimayMalik</title>
-    <!-- <title>NimayMalik</title>
-    <title>NimayMalik</title> -->
-    
-  </head>
-  <body>
-    <!-- header -->
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
 
-    <header class="header">
-      <a href="#" class="logo">Portfolio</a>
+<body>
+    <!-- Header Checked-->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <span class="logo-text">&lt;/Portfolio&gt;</span>
+                </div>
+                <!-- checked -->
+                <nav class="nav desktop-nav">
+                    <a href="#home" class="nav-link">
+                        <span class="nav-text">Home</span>
+                    </a>
+                    <a href="#about" class="nav-link">
+                        <span class="nav-text">About</span>
+                    </a>
+                    <a href="#skills" class="nav-link">
+                        <span class="nav-text">Skills</span>
+                    </a>
+                    <a href="#projects" class="nav-link">
+                        <span class="nav-text">Projects</span>
+                    </a>
+                    <a href="#contact" class="nav-link">
+                        <span class="nav-text">Contact</span>
+                    </a>
+                </nav>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
+            </div>
 
-      <i class="fa-solid fa-bars" id="menu-icon"></i>
-
-      <nav class="navbar">
-        <a href="#home" class="active">Home </a>
-        <a href="#about">About Me</a>
-        <a href="#services">Services</a>
-        <a href="#contact">contact</a>
-      </nav>
+            <nav class="mobile-nav" id="mobileNav">
+                <a href="#home" class="mobile-nav-link">01. Home</a>
+                <a href="#about" class="mobile-nav-link">02. About</a>
+                <a href="#skills" class="mobile-nav-link">03. Skills</a>
+                <a href="#projects" class="mobile-nav-link">04. Projects</a>
+                <a href="#contact" class="mobile-nav-link">05. Contact</a>
+            </nav>
+        </div>
     </header>
 
-    <!-- home section -->
-    <section class="home" id="home">
-      <div class="home-content"> 
-        <h2>Hi, Myself</h2>
-        <h1 class="name">Nimay Malik</h1>
-        <h1>And I'm a <span > Web developer</span></h1>
-
-        <p>
-          With a strong foundation in IT and a commitment to staying ahead in the ever-evolving tech landscape, I specialize in creating digital experiences that blend creativity and functionality. Whether it's front-end design, back-end development, or full-stack solutions, I bring innovation and precision to every project I take on. Let's build something amazing together!
-        </p>
-        <div class="social-media">
-          <a href="https://x.com/nimaymalik12"
-            ><i class="fa-brands fa-twitter"></i
-          ></a>
-          <a href="https://www.linkedin.com/in/nimay-malik-255679272/"
-            ><i class="fa-brands fa-brands fa-linkedin-in"></i
-          ></a>
-          <a href="https://github.com/Nimaymalik"
-            ><i class="fa-brands fa-github"></i
-          ></a>
+    <!-- Home Section Checked-->
+    <section id="home" class="hero">
+        <div class="hero-grid">
+            <div class="grid-line"></div>
+            <div class="grid-line"></div>
+            <div class="grid-line"></div>
+            <div class="grid-line"></div>
         </div>
-        <a href="https://drive.google.com/file/d/1Tm763WvVhws-WrRgV1Da3HxqIt5FCyrP/view?usp=drive_link" class="btn">Download CV</a>
-      </div>
 
-      <div class="home-img">
-        <img src="nimay.jpg" />
-      </div>
+        <div class="container hero-content">
+            <div class="hero-intro">
+                <p class="hero-greeting">Hi, my name is</p>
+                <h1 class="hero-name">
+                    <span class="" data-text="Your Name">Nimay Malik</span>
+                </h1>
+                <h2 class="hero-title">I build things for the web.</h2>
+                <p class="hero-description">
+                    I'm a software engineer specializing in building exceptional digital experiences.
+                    Currently, I'm focused on building accessible, human-centered products.
+                </p>
+
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">Check out my work!</a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="terminal">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <span class="btn-close"></span>
+                            <span class="btn-minimize"></span>
+                            <span class="btn-maximize"></span>
+                        </div>
+                        <!-- Portfolio.js section -->
+                        <div class="terminal-title">portfolio.js</div>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="code-line">
+                            <span class="line-number">1</span>
+                            <span class="code-content">
+                                <span class="keyword">const</span>
+                                <span class="variable">developer</span> = {
+                            </span>
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">2</span>
+                            <span class="code-content">
+                                &nbsp;&nbsp;<span class="property">name</span>:
+                                <span class="string">'Nimay Malik'</span>,
+                            </span>
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">3</span>
+                            <span class="code-content">
+                                &nbsp;&nbsp;<span class="property">skills</span>:
+                                <span class="array">['React.js', 'Node.js', 'Express.js']</span>,
+                            </span>
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">4</span>
+                            <span class="code-content">
+                                &nbsp;&nbsp;<span class="property">passion</span>:
+                                <span class="string">'Building amazing things'</span>
+                            </span>
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">5</span>
+                            <span class="code-content">};</span>
+                        </div>
+                        <div class="code-line typing">
+                            <span class="line-number">6</span>
+                            <span class="code-content">
+                                <span class="comment">// Let's build something amazing together</span>
+                                <span class="cursor">|</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-sidebar">
+            <div class="social-links">
+                <a href="https://github.com/Nimaymalik" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/nimay-malik-255679272/" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://x.com/nimaymalik12" target="_blank" class="social-link">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="mailto:nimaymalik21@gmail.com" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <div class="social-line"></div>
+        </div>
+
+        <div class="email-sidebar">
+            <a href="mailto:nimaymalik21@gmail.com" class="email-link">nimaymalik21@gmail.com</a>
+            <div class="email-line"></div>
+        </div>
     </section>
 
+    <!-- About Section Checked-->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="section-number">01.</span>
+                    About Me
+                </h2>
+            </div>
 
-    <!-- About section design -->
-    <section class="about" id="about">
-      <div class="about-img">
-        <img src="nimay.jpg" alt="" />
-      </div>
-      <div class="about-content">
-        <h2 class="heading">About <span>Me</span></h2>
-        <!-- <h3 class="web">Web developer</h3> -->
-        <p>
-          Welcome to my portfolio! I am a <span> web developer </span>committed
-          to crafting dynamic and user-friendly websites. With expertise in
-          <span> React.js,Express.js and Node.js </span>
-          with database including <span>MongoDB</span>, I excel at transforming
-          innovative concepts into seamless online experiences. I prioritize
-          collaboration and am dedicated to continuous learning, constantly
-          exploring new technologies to enhance my skill set. My goal is to
-          deliver high-quality, responsive solutions that are not only visually
-          appealing but also perform optimally. I look forward to the
-          opportunity to bring your vision to life.
-        </p>
-        <!-- <a href="#" class="btn">ReadMore</a> -->
-      </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-paragraph">
+                        Hello! My name is Nimay Malik and I'm a Full Stack Web Developer with a strong foundation in
+                        front-end and back-end technologies. I specialize in building responsive, user-friendly
+                        interfaces using HTML, CSS, and JavaScript, and developing scalable web applications with the
+                        MERN stack (MongoDB, Express.js, React.js, Node.js).
+                    </p>
+                    <p class="about-paragraph">
+                        With a problem-solving mindset and a commitment to writing clean, maintainable code, I enjoy
+                        turning complex challenges into intuitive digital experiences. Whether it's designing sleek
+                        front-ends or developing robust server-side logic, I aim to deliver high-performance solutions
+                        that add real value.
+                    </p>
+                    <p class="about-paragraph">
+                        Here are a few technologies I've been working with recently:
+                    </p>
+
+                    <ul class="tech-list">
+                        <li>JavaScript (ES6+)</li>
+                        <li>React</li>
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>TypeScript</li>
+                        <li>MongoDB</li>
+                        <li>Git & GitHub</li>
+                        <li>Vercel</li>
+
+                    </ul>
+                </div>
+
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <div class="image-placeholder">
+                            <img src="nimay.jpg" alt="" height="300px" width="300px">
+
+                        </div>
+                        <div class="image-border"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Service section -->
-    <section class="services" id="services">
-      <h2 class="heading">My <span>Services</span></h2>
-      <div class="services-container">
+    <!-- Skills Section Checked-->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="section-number">02.</span>
+                    Skills & Expertise
+                </h2>
+            </div>
 
-        <!-- Frontned -->
-        <div class="services-box">
-          <i class="fa-solid fa-palette"></i>
-          <h3>FrontEnd</h3>
-          <p>
-            I specialize in front-end development, bringing your vision to life
-            through engaging and responsive user interfaces. My services include
-            crafting visually stunning websites that prioritize user experience
-            and accessibility. I utilize modern technologies such as
-            <span>HTML</span>, <span>CSS</span>, and <span>JavaScript</span>,
-            along with popular Libraries like <span>React</span> and
-            <span>Vue.js</span>, to create seamless, interactive designs.
-          </p>
-          <!-- <a href="#" class="btn">ReadMore</a> -->
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="category-title">Frontend Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">React </span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Vue.js</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">CSS</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 class="category-title">Backend Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Node.js</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Express.js</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">MongoDB</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">SQL</span>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="70"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="category-title">Tools & Technologies</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Git / GitHub</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Vercel</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Render</span>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Figma</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <!-- Backend -->
-        <div class="services-box">
-          <i class="fa-solid fa-code"></i>
-          <h3>Backend</h3>
-          <p>
-            I offer comprehensive back-end development services that ensure your
-            web applications run smoothly and efficiently. With expertise in
-            server-side technologies such as
-            <span> Node.js </span> and <span>Express.js </span> I build robust
-            and scalable solutions tailored to your specific needs. My services
-            include API development, database integration, and server
-            management.
-          </p>
-          <!-- <a href="#" class="btn">ReadMore</a> -->
-        </div>
-
-   
     </section>
 
-    <!-- project section -->
-    <section class="portfolio" id="portfolio">
-      <h2 class="heading">Latest <span>Projects</span></h2>
-      <div class="portfolio-container">
-        <div class="portfolio-box">
-          <a href="https://github.com/Nimaymalik"><img src="image1.jpg" alt="" /></a>
-         
-          <div class="portfolio-layer">
-            <h4> Shopping Website </h4>
-            <p>
-              Developed a feature-rich E-commerce platform leveraging React.js, Express.js, Node.js with some tools like Tailwindcss to create a visually appealing and user-friendly shopping experience. 
-            </p>
-            <i class="fa-solid fa-up-right-form-square"></i>
-          </div>
-        </div>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="section-number">03.</span>
+                    Some Things I've Built
+                </h2>
+            </div>
 
-        <div class="portfolio-box">
-          <a href="https://github.com/Nimaymalik">
-            <img src="waste.jpg" alt="" />
-          </a>
-          <div class="portfolio-layer">
-            <h4>Waste Managment</h4>
-            <p>
-              Designed and developed a comprehensive waste management platform  React, Node ,Express and MongoDB as a database. The site features an intuitive interface for users to schedule pickups, access recycling information, and track waste disposal metrics.
-              
-            </p>
-            <i class="fa-solid fa-up-right-form-square"></i>
-          </div>
+            <div class="projects-list">
+                <!-- Cleanify project -->
+                <div class="project-item featured">
+                    <div class="project-content">
+                        <p class="project-overline">Featured Project</p>
+                        <h3 class="project-title">Cleanify</h3>
+                        <div class="project-description">
+                            <p>
+                                Built a scalable Next.js web app enabling users to report, track, and visualize local
+                                waste, improving real-time waste
+                                management awareness in the community.
+                                Designed a visually engaging and user-friendly interface that ensures an intuitive
+                                experience, allowing users to navigate
+                                and contribute to environmental responsibility easily.
+                                Implemented a reward system that incentivizes users with points and badges, driving
+                                active participation and fostering a
+                                sense of community in waste management efforts
+                            </p>
+                        </div>
+                        <ul class="project-tech-list">
+                            <li>Next.js</li>
+                            <li>Vercel</li>
+                            <li>Neon/Drizzle</li>
+                            <li>TypeScript</li>
+                            <li>Tailwind CSS</li>
+                        </ul>
+                        <div class="project-links">
+                            <a target="_blank" href="https://github.com/Nimaymalik/Cleanify
+" class="project-link" aria-label="GitHub Link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a target="_blank" href="https://cleanify-five.vercel.app/" class="project-link"
+                                aria-label="External Link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <!-- <i class="fas fa-palette"> -->
+                            <img src="cleanify.png" alt="" height="300px" width="700px">
+                            <!-- </i> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SkillBridge Project -->
+                <div class="project-item featured">
+                    <div class="project-content">
+                        <p class="project-overline">Featured Project</p>
+                        <h3 class="project-title">SkillBridge</h3>
+                        <div class="project-description">
+                            <p>
+                                An intuitive platform that connects job seekers with employers by offering advanced
+                                search, filter options, and
+                                personalized job matching to streamline recruitment processes.
+                                Built using the MERN stack to ensure scalability, security, and optimized performance,
+                                providing real-time, seamless
+                                user interactions and a fast job application experience
+                                Enhanced user experience by streamlining data management with Mong
+                            </p>
+                        </div>
+                        <ul class="project-tech-list">
+                            <li>React.js</li>
+                            <li>Node.js</li>
+                            <li>Express</li>
+                            <li>Vercel</li>
+                            <li>Tailwind CSS</li>
+                        </ul>
+                        <div class="project-links">
+                            <a target="_blank" href="https://github.com/Nimaymalik/SkillBridge-Frontend
+" class="project-link" aria-label="GitHub Link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a target="_blank" href="https://skill-bridge-frontend.vercel.app/" class="project-link"
+                                aria-label="External Link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <img height="300px" width="800px" src="skillbridge.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DailyDose -->
+                <div class="project-item featured">
+                    <div class="project-content">
+                        <p class="project-overline">Featured Project</p>
+                        <h3 class="project-title">DailyDose</h3>
+                        <div class="project-description">
+                            <p>
+                                Developed a mobile app that enhances healthcare routines with personalized medication
+                                reminders, dosage tracking, and
+                                health goal monitoring, improving user adherence to health plans.
+                                • Deployed a real-time API on Render powered by LLM, providing detailed insights into
+                                medication side effects,
+                                interactions, and recommendations based on user input.
+                                • Utilized web scraping techniques to compare up-to-date medication prices across
+                                various platforms, helping users make
+                                informed, cost-effective purchasing decisions with ease.
+                            </p>
+                        </div>
+                        <ul class="project-tech-list">
+                            <li>Android</li>
+                            <li>Java</li>
+                            <li>Node.js</li>
+                            <li>AL/LLM</li>
+                            <li>Render</li>
+                            <li>Github</li>
+                        </ul>
+                        <div class="project-links">
+                            <a target="_blank" href="https://github.com/Nimaymalik/Daily-Dose
+" class="project-link" aria-label="GitHub Link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="project-link" aria-label="External Link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fab fa-github"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
-        
-        <div class="portfolio-box">
-          <img src="image1.jpg" alt="" />
-          <div class="portfolio-layer">
-            <h4>Web Design</h4>
-            <p>
-             
-            </p>
-            <i class="fa-solid fa-up-right-form-square"></i>
-          </div>
-        </div>
-      </div>
     </section>
 
-    <!-- contact section -->
-    <section class="contact" id="contact">
-      <h2 class="heading">Contact <span>Me</span></h2>
-
-      <form action="https://api.web3forms.com/submit" method="POST">
-        <input type="hidden" name="access_key" value="9ac6beb8-b919-4ff4-8bb4-a343782d5ad9">
-        
-        <div class="input-box">
-          <input type="text" name="full_name" placeholder="Full Name" required>
-          <input type="email" name="email_address" placeholder="Email Address" required>
+    <!-- Contact Section Checked-->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="section-number">04.</span>
+                    What's Next?
+                </h2>
+                <h3 class="contact-title">Get In Touch</h3>
+                <p class="contact-description">
+                    I'm currently exploring exciting new roles and collaborations.
+                    Whether you have a project in mind, a question to ask, or just want to say hello — my inbox is
+                    always open.
+                    I'll do my best to get back to you as soon as I can. Let’s connect and create something great
+                    together!
+                </p>
+                <a href="mailto:nimaymalik21@gmail.com" class="btn btn-outline">Say Hello</a>
+            </div>
         </div>
-        
-        <div class="input-box">
-          <input type="number" name="mobile_number" placeholder="Mobile Number" required>
-          <input type="text" name="subject" placeholder="Subject" required>
-        </div>
-        
-        <textarea
-          name="message"
-          cols="30"
-          rows="10"
-          placeholder="Your Message"
-          required
-        ></textarea>
-        
-        <input type="submit" value="Send Message" class="btn">
-      </form>
-      
-
     </section>
 
-    <!-- Footer section -->
+    <!-- Footer Checked-->
     <footer class="footer">
-      <div class="footer-text">
-        <p>copyright &copy;2024 by Nimay malik|All rights reserved</p>
-      </div>
-      <div class="footer-iconTop">
-        <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
-      </div>
+        <div class="container">
+            <div class="footer-content">
+                <p>Built by Nimay Malik</p>
+                <div class="footer-links">
+                    <a href="https://github.com/Nimaymalik" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/nimay-malik-255679272/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:nimaymalik21@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
     </footer>
 
-    <script src="index.js"></script>
-    
+    <script src="script.js"></script>
+</body>
 
-  </body>
-  
 </html>
